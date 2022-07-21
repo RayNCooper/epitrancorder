@@ -6,6 +6,9 @@ authors = ["Dennis Reinkober <dennis.reinkober@digitalseals.de>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+epitran = "^1.22"
+fastapi = "^0.79.0"
+uvicorn = {extras = ["standard"], version = "^0.18.2"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
