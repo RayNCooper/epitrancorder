@@ -1,9 +1,21 @@
 from pydantic import BaseModel
 from fastapi import FastAPI
 from epitran.backoff import Backoff
+from fastapi.middleware.cors import CORSMiddleware
 import enum
 
 app = FastAPI()
+
+""" Yes, I know. One should not do this - Ever. """
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 languages = [
         {
