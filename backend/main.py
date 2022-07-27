@@ -76,7 +76,7 @@ def write_transliteration(lang_id: int, transliteration_type: TransliterationTyp
         transliterated_text = ""
         for word in words:
 
-            if words[words.__len__()-1] == word:
+            if words[len(words)-1] == word:
                 transliterated_text += transliterate_word(transliteration_type, word, backoff)
 
             else:

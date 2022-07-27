@@ -2,7 +2,7 @@
 name = "epitrancorder"
 version = "0.1.0"
 description = ""
-authors = ["Dennis Reinkober <dennis.reinkober@digitalseals.de>"]
+authors = ["Dennis Reinkober"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
